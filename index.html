@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam - Professional Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h2 class="logo">Ashwani Kumar</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Ashwani Kumar</h1>
+            <p>Full-Stack Developer & Software Engineer</p>
+            <p>Passionate about creating innovative solutions and delivering exceptional user experiences.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <button class="btn secondary" onclick="downloadResume()">Download Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Experienced Full-Stack Developer with a passion for creating innovative digital solutions.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>With over 5 years of experience in software development, I specialize in building scalable web applications and mobile solutions. My expertise spans across modern technologies including React, Node.js, Python, and cloud platforms.</p>
+                    <p>I believe in writing clean, maintainable code and delivering exceptional user experiences. When I'm not coding, you'll find me exploring new technologies or contributing to open-source projects.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="profile.jpg" alt="Ashwani Kumar - Professional Profile" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>React, Vue.js, Angular, HTML5, CSS3, JavaScript (ES6+), TypeScript</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Python (Django/Flask), PHP, REST APIs, GraphQL</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Database & Cloud</h3>
+                    <p>MongoDB, PostgreSQL, MySQL, AWS, Docker, Kubernetes</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Development</h3>
+                    <p>React Native, Flutter, iOS (Swift), Android (Kotlin)</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & Machine Learning</h3>
+                    <p>TensorFlow, PyTorch, Scikit-learn, OpenCV, NLP</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-tools"></i>
+                    <h3>DevOps & Tools</h3>
+                    <p>Git, Jenkins, CI/CD, Linux, Agile/Scrum, Testing</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack e-commerce solution with React frontend, Node.js backend, and MongoDB. Features include user authentication, payment integration, and admin dashboard.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Chat Application</h3>
+                    <p>Real-time chat application powered by machine learning. Built with Python, TensorFlow, and WebSocket for instant messaging with AI responses.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>WebSocket</span>
+                        <span>React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Task Management App</h3>
+                    <p>Cross-platform mobile application for team collaboration. Features include real-time updates, file sharing, and project tracking with React Native.</p>
+                    <div class="project-tech">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                        <span>Redux</span>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics Dashboard</h3>
+                    <p>Interactive dashboard for business intelligence with real-time data visualization. Built with D3.js, Python, and PostgreSQL for comprehensive analytics.</p>
+                    <div class="project-tech">
+                        <span>D3.js</span>
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                        <span>Flask</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn secondary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Ready to bring your ideas to life? Let's discuss your next project.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>ashwani@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>New York, NY</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" name="name" required>
+                        <input type="email" placeholder="Your Email" name="email" required>
+                    </div>
+                    <input type="text" placeholder="Subject" name="subject" required>
+                    <textarea placeholder="Your Message" name="message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Shyam. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/shyam" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/shyam" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://twitter.com/shyam" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
